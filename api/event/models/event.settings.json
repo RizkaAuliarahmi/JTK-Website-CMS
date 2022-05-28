@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event_metadata": {
+      "type": "dynamiczone",
+      "components": [
+        "metadata.metadata"
+      ],
+      "required": true
+    },
+    "start_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "end_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "moderator_names": {
+      "type": "richtext"
+    },
+    "speaker_names": {
+      "type": "richtext"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "prize": {
+      "type": "string"
+    },
+    "contacts": {
+      "type": "richtext"
+    }
+  }
+}

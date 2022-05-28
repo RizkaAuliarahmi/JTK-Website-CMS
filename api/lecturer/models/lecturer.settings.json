@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lecturers",
+  "info": {
+    "name": "Lecturer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "expertise": {
+      "type": "string"
+    },
+    "kbk": {
+      "type": "string"
+    },
+    "subjects": {
+      "type": "text"
+    },
+    "products": {
+      "type": "text"
+    },
+    "researcher": {
+      "type": "text"
+    },
+    "community_services": {
+      "type": "text"
+    },
+    "publication": {
+      "type": "text"
+    },
+    "employees": {
+      "collection": "test",
+      "via": "lecturers",
+      "dominant": true
+    }
+  }
+}

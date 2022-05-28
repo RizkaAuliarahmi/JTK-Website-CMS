@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_infos",
+  "info": {
+    "name": "News Info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "news_metadata": {
+      "type": "dynamiczone",
+      "components": [
+        "metadata.metadata"
+      ]
+    },
+    "news_category_id": {
+      "type": "string"
+    },
+    "news_category_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
