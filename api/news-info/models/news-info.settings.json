@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "news_infos",
   "info": {
-    "name": "News Info"
+    "name": "News Info",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,20 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "news_metadata": {
-      "type": "dynamiczone",
-      "components": [
-        "metadata.metadata"
-      ]
+    "article_comp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "article-comp.article-comp"
     },
-    "news_category_id": {
-      "type": "string"
+    "news_categories": {
+      "collection": "news-category"
     },
-    "news_category_title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
+    "contents": {
+      "collection": "content"
     }
   }
 }
