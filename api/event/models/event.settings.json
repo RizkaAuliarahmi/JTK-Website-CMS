@@ -12,13 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "event_metadata": {
-      "type": "dynamiczone",
-      "components": [
-        "metadata.metadata"
-      ],
-      "required": true
-    },
     "start_date": {
       "type": "datetime",
       "required": true
@@ -45,6 +38,14 @@
     },
     "contacts": {
       "type": "richtext"
+    },
+    "article_comp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "article-comp.article-comp"
+    },
+    "contents": {
+      "collection": "content"
     }
   }
 }
