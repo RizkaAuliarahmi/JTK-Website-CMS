@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "metadata": {
-      "type": "dynamiczone",
-      "components": [
-        "metadata.metadata"
-      ]
-    },
     "name": {
       "type": "string"
     },
@@ -49,6 +43,11 @@
     "lecturers": {
       "via": "employees",
       "collection": "lecturer"
+    },
+    "article_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "article-comp.article-comp"
     }
   }
 }

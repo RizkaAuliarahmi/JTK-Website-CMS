@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "general_infos",
+  "info": {
+    "name": "General Info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Visi": {
+      "type": "text"
+    },
+    "Misi": {
+      "type": "string"
+    },
+    "Tujuan": {
+      "type": "text"
+    },
+    "profil_lulusan": {
+      "type": "richtext"
+    },
+    "capaian_pembelajaran": {
+      "type": "richtext"
+    },
+    "kurikulum": {
+      "type": "richtext"
+    },
+    "article_comp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "article-comp.article-comp"
+    }
+  }
+}

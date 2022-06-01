@@ -34,8 +34,8 @@
       "type": "text"
     },
     "employees": {
-      "collection": "test",
       "via": "lecturers",
+      "collection": "test",
       "dominant": true
     }
   }

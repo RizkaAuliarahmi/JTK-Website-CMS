@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_article_comp_article_comps",
+  "info": {
+    "name": "article_comp",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "banner_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "last_update": {
+      "type": "datetime"
+    }
+  }
+}
