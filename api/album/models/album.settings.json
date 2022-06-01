@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albums",
+  "info": {
+    "name": "Album"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "album_title": {
+      "type": "string"
+    },
+    "media": {
+      "via": "album",
+      "collection": "medias"
+    }
+  }
+}

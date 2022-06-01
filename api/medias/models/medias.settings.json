@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medias",
+  "info": {
+    "name": "Medias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_url": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "media_caption": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "album": {
+      "model": "album",
+      "via": "media"
+    }
+  }
+}
