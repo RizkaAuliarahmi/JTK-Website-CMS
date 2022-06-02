@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dept_cohort_jobs",
+  "info": {
+    "name": "Dept Cohort Job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "job": {
+      "model": "job",
+      "via": "dept_cohort_jobs"
+    },
+    "cohort": {
+      "model": "cohort",
+      "via": "dept_cohort_jobs"
+    },
+    "number_of_student_in_job": {
+      "type": "integer"
+    }
+  }
+}

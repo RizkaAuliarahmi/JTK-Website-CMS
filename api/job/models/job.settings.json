@@ -16,6 +16,10 @@
     },
     "job_title": {
       "type": "string"
+    },
+    "dept_cohort_jobs": {
+      "via": "job",
+      "collection": "dept-cohort-job"
     }
   }
 }

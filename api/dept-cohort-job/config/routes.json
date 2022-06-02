@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dept-cohort-jobs",
+      "handler": "dept-cohort-job.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dept-cohort-jobs/count",
+      "handler": "dept-cohort-job.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dept-cohort-jobs/:id",
+      "handler": "dept-cohort-job.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dept-cohort-jobs",
+      "handler": "dept-cohort-job.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dept-cohort-jobs/:id",
+      "handler": "dept-cohort-job.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dept-cohort-jobs/:id",
+      "handler": "dept-cohort-job.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

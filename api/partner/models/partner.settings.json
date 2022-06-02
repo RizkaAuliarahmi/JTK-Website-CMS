@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "departments",
+  "collectionName": "partners",
   "info": {
-    "name": "Department",
-    "description": ""
+    "name": "Partner"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "department_title": {
+    "partner_name": {
       "type": "string"
     },
-    "cohorts": {
-      "via": "department",
-      "collection": "cohort"
-    },
-    "dept_image": {
-      "model": "file",
+    "partner_image": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
