@@ -21,8 +21,8 @@
       "type": "integer"
     },
     "department": {
-      "model": "department",
-      "via": "cohorts"
+      "via": "cohorts",
+      "model": "department"
     },
     "dept_cohort_jobs": {
       "via": "cohort",
