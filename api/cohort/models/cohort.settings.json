@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cohorts",
+  "info": {
+    "name": "Cohort"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "number_of_female_student": {
+      "type": "integer"
+    },
+    "number_of_male_student": {
+      "type": "integer"
+    },
+    "department": {
+      "model": "department",
+      "via": "cohorts"
+    },
+    "dept_cohort_jobs": {
+      "via": "cohort",
+      "collection": "dept-cohort-job"
+    }
+  }
+}

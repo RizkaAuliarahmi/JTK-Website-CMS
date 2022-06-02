@@ -14,6 +14,10 @@
   "attributes": {
     "department_title": {
       "type": "string"
+    },
+    "cohorts": {
+      "via": "department",
+      "collection": "cohort"
     }
   }
 }
