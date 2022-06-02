@@ -48,6 +48,10 @@
       "type": "component",
       "repeatable": false,
       "component": "article-comp.article-comp"
+    },
+    "departments": {
+      "via": "employees",
+      "collection": "department"
     }
   }
 }
