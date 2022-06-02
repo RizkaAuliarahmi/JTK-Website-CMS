@@ -30,6 +30,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    "employees": {
+      "collection": "test",
+      "via": "departments",
+      "dominant": true
     }
   }
 }
